@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        $(document).ready(function(){
+            $('img').click(function(){
+            var newimage = $(this).attr('data-alt-src');
+            var original = $(this).attr('src')
+                $(this).attr('data-alt-src');
+                $(this).attr('src', newimage);
+                $(this).attr('data-alt-src', original);
+                console.log(original, newimage)
+                })
+            })
+    </script>
+    <title>Matchy Matchy!</title>
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li><img src="./img/questionmark2.svg" alt="" data-alt-src="./img/cat1.jpg"></li>
+            <li><img src="./img/questionmark2.svg" alt="" data-alt-src="./img/cat2.jpg"></li>
+            <li><img src="./img/questionmark2.svg" alt="" data-alt-src="./img/cat3.jpg"></li>
+        </ul>
+        <ul>
+            <li><img src="./img/questionmark2.svg" alt="" data-alt-src="./img/cat4.jpg"></li>
+            <li><img src="./img/questionmark2.svg" alt="" data-alt-src="./img/cat5.jpg"></li>
+            <li><img src="./img/questionmark2.svg" alt="" data-alt-src="./img/cat6.jpg"></li>
+        </ul>
+        <ul>
+            <li><img src="./img/questionmark2.svg" alt="" data-alt-src="./img/cat1.jpg"></li>
+            <li><img src="./img/questionmark2.svg" alt="" data-alt-src="./img/cat2.jpg"></li>
+            <li><img src="./img/questionmark2.svg" alt="" data-alt-src="./img/cat3.jpg"></li>
+        </ul>
+        <ul>
+            <li><img src="./img/questionmark2.svg" alt="" data-alt-src="./img/cat4.jpg"></li>
+            <li><img src="./img/questionmark2.svg" alt="" data-alt-src="./img/cat5.jpg"></li>
+            <li><img src="./img/questionmark2.svg" alt="" data-alt-src="./img/cat6.jpg"></li>
+        </ul>
+    </div>
+</body>
+</html>
